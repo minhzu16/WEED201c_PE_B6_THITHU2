@@ -122,7 +122,7 @@
 					</div>
 
 					<div class="submit">
-						<input type="submit" value="Send" />
+						<input onclick="show()" type="submit" value="Send" />
 					</div>
 
 				</form>
@@ -198,6 +198,16 @@
 	</div> <!-- Finish content footer-->
 	
 </div> <!-- Finish content div wrapper-->	
+
+<script>
+	function show() {
+		let text;
+		let person = prompt("Enter your phone!", "");
+		text = person;
+		alert("The store will contact you as soon as possible via phone number:\n" + text);
+	}
+</script>
+
 </body>
 </html>
 
